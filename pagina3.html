@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/isologofinal.png">
+
+    <style>
+         .header{
+    background-image: url(images/Shigaraki\ Tomura_upscayl_5x_upscayl-standard-4x.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+        }
+
+    .header-info p{
+    color: goldenrod;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+
+    .btn-2:hover{
+    background-image: linear-gradient(to right, purple, yellow);
+}
+
+    .hexadecimales{
+    background-color: #512592;
+    width: 50px;
+    height: 50px;
+}
+
+.keywords{
+    background-color: palevioletred;
+    width: 50px;
+    height: 50px;
+}
+
+.RGB{
+    background-color: rgb(77, 180, 168);
+    width: 50px;
+    height: 50px;
+}
+
+.RGBa{
+    background-color: rgba(175, 238, 238, 0.591);
+    width: 50px;
+    height: 50px;
+}
+
+.HSL{
+    background-color: hsl(196, 73%, 62%);
+    width: 50px;
+    height: 50px;
+}
+
+.HSLa{
+    background-color: hsla(14, 100%, 50%, 0.5);
+    width: 50px;
+    height: 50px;
+}
+
+#caja {
+        width: 100px;
+        height: 100px;
+        background-color: crimson;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+ 
+    /* Animaciones individuales */
+    .mover {
+        animation: moverAnim 3s infinite ease-in-out;
+    }
+ 
+    .escalar {
+        animation: escalarAnim 3s infinite ease-in-out;
+    }
+ 
+    .rotar {
+        animation: rotarAnim 3s infinite linear;
+    }
+ 
+    .color {
+        animation: colorAnim 3s infinite ease-in-out;
+    }
+ 
+ 
+    /* Keyframes */
+    @keyframes moverAnim {
+        0% {
+            transform: translateX(0);
+        }
+ 
+        100% {
+            transform: translateX(150px);
+        }
+    }
+ 
+    @keyframes escalarAnim {
+        0% {
+            transform: scale(1);
+        }
+ 
+        100% {
+            transform: scale(1.5);
+        }
+    }
+ 
+    @keyframes rotarAnim {
+        0% {
+            transform: rotate(0deg);
+        }
+ 
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+ 
+    @keyframes colorAnim {
+        0% {
+            background-color: crimson;
+        }
+ 
+        100% {
+            background-color: dodgerblue;
+        }
+    }
+    
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+    <div class="menu container">
+
+        <a href="#" class="logo" ></a>
+        <input type="checkbox" id="menu">
+        <label for="menu"><img src="images/menu.png" class="menu-icono" alt=""></label>
+        <nav class="navbar">
+
+            <ul>
+                <li><a href="index.html">Parcial 1</a></li>
+                <li><a href="pagina2.html">Parcial 2</a></li>
+                <li><a href="pagina3.html">Parcial 3</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+
+    <div class="header-content container">
+        <div class="header-info">
+            <h1>BITÁCORA</h1>
+            <p>Parcial 3</p>
+            <a href="#" class="btn-2">Inicio</a>
+        </div>
+
+    </div>
+
+   </header>
+
+
+
+   <section class="gym container">
+    <div class="gym-1">
+        <h2><span>COLORES</span></h2>
+        <div id="colores" class="hexadecimales"></div>
+            <p>Hexadecimales: Se usa para definir colores combinando el signo # con seis dígitos hexadecimales.</p>
+            <div id="colores" class="keywords"></div>
+            <p>Keywords: Son palabras reservadas que se utilizan para definir propiedades y valores o para controlar el comportamiento y el diseño de los elementos.</p>
+            <div id="colores" class="RGB"></div>
+            <p>RGB: Define un color mezclando intensidades de rojo, verde y azul, usando valores entre 0 y 255 o porcentajes del 0% al 100%.</p>
+            <div id="colores" class="RGBa"></div>
+            <p>RGBA: Se usa para definir un color con transpariencia, usando los valores de rojo, verde, azul (RGB) y un canal adicional de alfa. </p>
+            <div id="colores" class="HSL"></div>
+            <p>HSL: Es una función para definir solores basada en un Tono, Saturación y Luminosidad.</p>
+            <div id="colores" class="HSLa"></div>
+            <p>HSLa: Define un color usando el modelo de Tono, Saturación, Luminosidad y Alfa. Permitiendo controlar la transpariencia de un color.</p>
+        
+    </div>
+
+
+   </section>
+
+
+
+   <section class="gym container">
+
+     <div class="gym-2">
+        <img class="img-1" src="images/chatgpt.jpg" alt="gym">
+        <img class="img-2" src="images/Leti.jpg" alt="gym">
+
+    </div>
+
+    <div class="gym-1">
+        <h2><span>CREACIÓN DE UNA PÁGINA WEB (Chat GPT vs Diseñador)</span></h2>
+        <p>Ambas páginas creadas e inspiradas en la serie de Netflix ARCANE, pero
+        una fue creada por CHAT GPT y la otra por una diseñadora, creando el código
+        desde cero, lo cual facilita diferenciar una de la otra.</p>
+
+    </div>
+
+   </section>
+
+
+   <section class="gym container">
+    <div class="gym-1">
+        <h2><span>ANIMACIÓNES</span></h2>
+        <p>Animaciónes útiles para algo :D</p>
+
+        <h2>1. Movimiento (translateX)</h2>
+    <div class="contenedor">
+        <div id="caja" class="mover">Mover</div>
+    </div>
+ 
+    <h2>2. Escala (scale)</h2>
+    <div class="contenedor">
+        <div id="caja" class="escalar">Escalar</div>
+    </div>
+ 
+    <h2>3. Rotación (rotate)</h2>
+    <div class="contenedor">
+        <div id="caja" class="rotar">Rotar</div>
+    </div>
+ 
+    <h2>4. Cambio de Color (background-color)</h2>
+    <div class="contenedor">
+        <div id="caja" class="color">Color</div>
+    </div>
+
+    </div>
+
+   </section>
+
+
+   <footer class="footer container">
+    
+    <h3>BITACORA</h3>
+    <div class="links">
+        <ul>
+            <li><a href="#">Astrid Benavides 217417</a></li>
+            <li><a href="#">Diseño Web</a></li>
+            <li><a href="#">06/11/2025</a></li>
+        </ul>
+
+    </div>
+
+    <form action="">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" value="Inserta número de cuenta">
+        <input type="submit" value="Guardar">
+    </form>
+    
+
+
+</footer>
+</body>
+</html>
